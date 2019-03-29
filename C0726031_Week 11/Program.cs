@@ -10,6 +10,15 @@ namespace C0726031_Week_11
     {
         static void Main(string[] args)
         {
+            HelloWorld hw = new HelloWorld();
+            hw.Hello();
         }
     }
+    class HelloWorld
+    {
+        public void Hello()
+        {
+            Console.WriteLine("HelloWorld");
+        }
+    } 
 }
