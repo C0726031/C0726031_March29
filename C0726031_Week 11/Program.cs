@@ -20,10 +20,13 @@ namespace C0726031_Week_11
 
         static void Download()
         {
-            Thread.Sleep(3000);
-            Console.WriteLine("Download complete");
+            Task.Run(() =>
+            {
+                Thread.Sleep(3000);
+                Console.WriteLine("Download complete");
 
-        }
+            });
+
     }
 }
 
